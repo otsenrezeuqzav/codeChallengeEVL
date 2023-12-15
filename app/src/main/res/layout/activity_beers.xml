@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--NestedScrollView, para anidar otras vistas de desplazamiento-->
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/idNestedSV"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.BeersActivity">
+
+    <!--linear layout para mostrar el recycler view-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--RecyclerView para mostrar la lista de datos (cervezas) y se hace un NestedScrollView para nuestro RecyclerView como falso-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerview"/>
+
+        <!--ProgressBar con el propósito de mostrar que se está cargando la información-->
+        <ProgressBar
+            android:id="@+id/idPBLoading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

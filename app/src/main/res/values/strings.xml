@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">codeChallengeEVL</string>
+    // Inicio activity_login.xml
+    <string name="credenciales">"Favor de proporcionar sus credenciales..."</string>
+    <string name="correo">"Correo electrónico"</string>
+    <string name="contrasena">"Contraseña"</string>
+    <string name="acceder">"Acceder"</string>
+    <string name="guardar">"Recordar correo"</string>
+    <string name="version">"1.0.0"</string>
+    <string name="credencialesPredeterminadas">"Credenciales predeterminadas: \ncorreo@gmail.com - 123456"</string>
+    // Fin activity_login.xml
+
+    // Inicio LoginActivity.java
+    // Asumimos la funcionalidad de inicio de sesión al utilizar de forma predeterminada una cuenta y contraseña correctas
+    <string name="accesoOk">"Acceso exitoso"</string>
+    <string name="putStrCorreo">"correo"</string>
+    <string name="putStrGuardar">"guardar"</string>
+    <string name="accesoNoOk">"Acceso fallido"</string>
+    <string name="exit">"EXIT"</string>
+    <string name="shpAcceso">"Acceso"</string>
+    // Fin LoginActivity.java
+
+    // Inicio activity_beers.xml
+        // no hay cadenas en está vista
+    // Fin activity_beers.xml
+
+    // Inicio BeersActivity
+    <string name="tituloLstCervezas">"Lista de cervezas"</string>
+    <string name="onFailureMsg">"Error de comunicaciones, intentelo más tarde"</string>
+    <string name="infoUseSQLiteDbMsg">"Se usa BD sqlite"</string>
+    <string name="infoUseWsMsg">"Se usa API:https://api.punkapi.com/"</string>
+    <string name="putStrPage">"pageSP"</string>
+    // Fin BeersActivity
+
+    // Inicio activity_detail.xml
+    <string name="slogan">"Eslogan:"</string>
+    <string name="firstBrewed">"Primera elaboración:"</string>
+    <string name="description">"Descripción:"</string>
+    <string name="abv">"abv:"</string>
+    <string name="ibu">"ibu:"</string>
+    <string name="targetfg">"Target Fg:"</string>
+    <string name="targetog">"Target Og:"</string>
+    <string name="ebc">"Ebc:"</string>
+    <string name="srm">"Srm:"</string>
+    <string name="ph">"Ph:"</string>
+    <string name="attenuationlevel">"Attenuation level:"</string>
+    // Fin activity_detail.xml
+
+    // Inicio DetailActivity.java
+    <string name="tituloDetailCervezas">"Detalle de la cerveza:"</string>
+    <string name="keyName">"Name"</string>
+    <string name="keyImage">"Image"</string>
+    <string name="keyTagLine">"TagLine"</string>
+    <string name="keyDescription">"Description"</string>
+    <string name="keyFirstBrewed">"FirstBrewed"</string>
+    <string name="keyAbv">"Abv"</string>
+    <string name="keyIbu">"Ibu"</string>
+    <string name="keyTargetfg">"Targetfg"</string>
+    <string name="keyTargetog">"Targetog"</string>
+    <string name="keyEbc">"Ebc"</string>
+    <string name="keySrm">"Srm"</string>
+    <string name="keyPh">"Ph"</string>
+    <string name="keyAttenuationlevel">"Attenuationlevel"</string>
+    // Fin DetailActivity.java
+
+    // Inicio AlertDialog
+    <string name="cancelar">"Cancelar"</string>
+    <string name="aceptar">"Aceptar"</string>
+    <string name="alertDlgTitulo">"¿Realmente desea cerrar la aplicación?"</string>
+    // Fin AlertDialog
+</resources>

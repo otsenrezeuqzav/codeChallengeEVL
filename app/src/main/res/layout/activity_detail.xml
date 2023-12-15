@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.DetailActivity"
+        android:padding="10dp">
+
+        <!-- ImageView Detalle-->
+
+        <ImageView
+            android:id="@+id/imageViewDetail"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- TextView etiqueta eslogan -->
+
+        <TextView
+            android:id="@+id/tagLineLabel"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="@string/slogan"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewDetail" />
+
+        <!-- TextView slogan -->
+
+        <TextView
+            android:id="@+id/tagLine"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tagLineLabel"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewDetail" />
+
+        <!-- TextView etiqueta primera elaboración -->
+
+        <TextView
+            android:id="@+id/firstBrewedLabel"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:text="@string/firstBrewed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tagLine" />
+
+        <!-- TextView primera elaboración -->
+
+        <TextView
+            android:id="@+id/firstBrewed"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/firstBrewedLabel"
+            app:layout_constraintTop_toBottomOf="@+id/tagLine" />
+
+        <!-- TextView etiqueta descripción -->
+
+        <TextView
+            android:id="@+id/descLabel"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:text="@string/description"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/firstBrewedLabel" />
+
+        <!-- TextView descripción -->
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.526"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/descLabel" />
+
+        <!-- TextView etiqueta abv -->
+
+        <TextView
+            android:id="@+id/abvLabel"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:text="@string/abv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/desc" />
+
+        <!-- TextView abv -->
+
+        <TextView
+            android:id="@+id/abv"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/abvLabel"
+            app:layout_constraintTop_toBottomOf="@+id/desc" />
+
+        <!-- TextView etiqueta ibu -->
+
+        <TextView
+            android:id="@+id/ibuLabel"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:text="@string/ibu"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/abv" />
+
+        <!-- TextView ibu -->
+
+        <TextView
+            android:id="@+id/ibu"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ibuLabel"
+            app:layout_constraintTop_toBottomOf="@+id/abv" />
+
+        <!-- TextView etiqueta targetfg -->
+
+        <TextView
+            android:id="@+id/targetfgLabel"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:text="@string/targetfg"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ibu" />
+
+        <!-- TextView targetfg -->
+
+        <TextView
+            android:id="@+id/targetfg"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/targetfgLabel"
+            app:layout_constraintTop_toBottomOf="@+id/ibu" />
+
+        <!-- TextView etiqueta targetog-->
+
+        <TextView
+            android:id="@+id/targetogLabel"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:text="@string/targetog"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/targetfg" />
+
+        <!-- TextView targetog -->
+
+        <TextView
+            android:id="@+id/targetog"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/targetogLabel"
+            app:layout_constraintTop_toBottomOf="@+id/targetfg" />
+
+
+        <!-- TextView etiqueta ebc-->
+
+        <TextView
+            android:id="@+id/ebcLabel"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:text="@string/ebc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/targetog" />
+
+        <!-- TextView ebc -->
+
+        <TextView
+            android:id="@+id/ebc"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ebcLabel"
+            app:layout_constraintTop_toBottomOf="@+id/targetog" />
+
+        <!-- TextView etiqueta srm-->
+
+        <TextView
+            android:id="@+id/srmLabel"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:text="@string/srm"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ebc" />
+
+        <!-- TextView srm -->
+
+        <TextView
+            android:id="@+id/srm"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/srmLabel"
+            app:layout_constraintTop_toBottomOf="@+id/ebc" />
+
+        <!-- TextView etiqueta ph-->
+
+        <TextView
+            android:id="@+id/phLabel"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:text="@string/ph"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/srm" />
+
+        <!-- TextView ph -->
+
+        <TextView
+            android:id="@+id/ph"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/phLabel"
+            app:layout_constraintTop_toBottomOf="@+id/srm" />
+
+
+        <!-- TextView etiqueta attenuationlevel-->
+
+        <TextView
+            android:id="@+id/attenuationlevelLabel"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:text="@string/attenuationlevel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ph" />
+
+        <!-- TextView attenuationlevel -->
+
+        <TextView
+            android:id="@+id/attenuationlevel"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/attenuationlevelLabel"
+            app:layout_constraintTop_toBottomOf="@+id/ph" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
